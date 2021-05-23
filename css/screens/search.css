@@ -1,0 +1,150 @@
+.find-icon {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: var(--border-bottom);
+}
+
+.find-icon__icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.find-icon__icons i {
+  font-size: 25px;
+}
+
+.find-icon__icons span {
+  margin: 15px 0px 25px 0px;
+}
+
+.recommended-friends {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  border-bottom: var(--border-bottom);
+}
+
+.recommended-friends__header {
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+.recommended-friends__text {
+  margin-top: 60px;
+  margin-bottom: 90px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.open-chat__header {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.open-chat__title {
+  opacity: 0.5;
+  font-weight: 600;
+}
+
+.open-chat__text {
+  opacity: 0.3;
+  font-weight: 600;
+}
+
+.open-chat__text i {
+  margin-left: 5px;
+}
+
+.open-post {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.open-post__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.open-post__hashtag {
+  margin-top: 8px;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.open-post__members {
+  display: flex;
+}
+
+.open-post__members {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.open-post__members img {
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.open-post__members-count,
+.divider {
+  margin-right: 2px;
+  opacity: 0.5;
+}
+
+.open-post__members-state {
+  color: fuchsia;
+}
+
+.open-post__heart {
+  display: flex;
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  color: white;
+  font-size: 13px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 3px 6px;
+  border-radius: 10px;
+}
+
+.open-post__photo {
+  position: relative;
+}
+
+.open-post__photo img {
+  border-radius: 10px;
+}
+
+.open-post__heart i {
+  margin-right: 3px;
+}
+
+.open-post {
+  border-bottom: var(--border-bottom);
+}
+
+@keyframes heartcount {
+  0% {
+    color: white;
+  }
+
+  50% {
+    color: tomato;
+    transform: scale(2);
+  }
+
+  100% {
+    color: white;
+  }
+}
+
+.open-post__heart i:hover {
+  will-change: transform;
+  animation: heartcount 1s linear infinite;
+}

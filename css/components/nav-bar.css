@@ -1,0 +1,92 @@
+.nav {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f9f9f9fa;
+  padding: 10px 40px;
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 가장 가까운 부모를 기준으로 위치설정 */
+.nav__link {
+  color: #2e363e;
+  position: relative;
+}
+
+.nav_notification-chat {
+  display: flex;
+  width: 23px;
+  height: 23px;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 18px;
+  left: 22px;
+  animation: notificationAnimation 1.5s ease-in-out infinite;
+}
+
+.nav_notification-another {
+  display: flex;
+  width: 6px;
+  height: 6px;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 27px;
+  left: 30px;
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+
+  50% {
+    transform: translateY(-5px) rotateY(360deg);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.nav__btn {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: appearBtnAnimation 0.3s ease-in-out forwards;
+}
+
+.nav__btn:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.nav__btn:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.nav__btn:last-child {
+  animation-delay: 0.9s;
+}

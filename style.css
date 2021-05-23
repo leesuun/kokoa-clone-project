@@ -1,0 +1,17 @@
+body {
+  background-image: url("css/img/pngwing.com\ \(17\).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper {
+  background-image: url("css/img/pngwing.com\ \(17\).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  overflow: hidden;
+}

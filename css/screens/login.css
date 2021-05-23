@@ -1,0 +1,123 @@
+.login__wrapper {
+  background-image: url("img/pngwing.com\ \(18\).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.welcome-header {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  text-align: center;
+}
+
+@keyframes DropText {
+  from {
+    transform: translateY(-15rem);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.welcome-header__title {
+  font-size: 25px;
+  color: var(--blue);
+  font-family: "Anton", sans-serif;
+  text-shadow: 4px 2px 2px rgb(66, 149, 242, 0.7);
+  font-weight: 600;
+  margin-bottom: 25px;
+
+  animation: DropText 1s ease-in-out;
+}
+
+@keyframes SlideText {
+  from {
+    transform: translateX(25rem);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.welcome-header__text {
+  width: 60%;
+  line-height: 170%;
+  opacity: 0.7;
+  animation: SlideText 2.5s ease-in-out;
+}
+
+@keyframes Appear {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.login-box {
+  width: 80%;
+  text-align: center;
+  background-color: inherit;
+  border: 3px solid white;
+  box-shadow: 1px 1px 10px 1px white;
+  border-radius: 10px;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  animation-delay: 3s;
+  animation: Appear 4s ease-in-out;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 25px 0px 25px;
+}
+
+#login-form input {
+  border: none;
+  margin-bottom: 17px;
+  padding: 11px 0px;
+  background-color: inherit;
+}
+
+#login-form input::placeholder {
+  opacity: 1;
+}
+
+#login-form input:not([type="submit"]) {
+  border-bottom: 1.2px solid rgba(0, 0, 0, 1);
+  transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input:focus {
+  border-color: var(--blue);
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--blue);
+  cursor: pointer;
+  padding: 17px;
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  color: white;
+  opacity: 0.8;
+}
