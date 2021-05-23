@@ -12,6 +12,7 @@
 @import "screens/more.css";
 @import "screens/settings.css";
 @import "screens/chat.css";
+@import "screens/chats.css";
 
 /* components css */
 @import "components/status-bar.css";

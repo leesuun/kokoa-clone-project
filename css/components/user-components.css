@@ -1,22 +1,25 @@
 .user-components {
+  display: flex;
   justify-content: space-between;
 }
 
-.user-components,
-.user-components__column:nth-child(1) {
+.user-components__column {
   display: flex;
   align-items: center;
+}
+
+.user-components img {
+  background-image: url("img/water.jpg");
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .user-components__span {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-}
-
-.user-components__span span:nth-child(1) {
-  opacity: 0.5;
-  font-size: 13px;
 }
 
 .user-components__avatar {
@@ -36,12 +39,14 @@
 .user-components__title {
   font-size: 22px;
   font-weight: 600;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .user-components__subtitle {
   margin-top: 7px;
   font-size: 13px;
   opacity: 0.5;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .user-components__title--not-bold {

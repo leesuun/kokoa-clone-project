@@ -1,0 +1,31 @@
+.user-components__group img {
+  width: 25px;
+  height: 25px;
+}
+
+.user-components__group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.user-components__group img:nth-child(1),
+.user-components__group img:nth-child(2) {
+  margin-bottom: 5px;
+}
+
+.user-components__group img:nth-child(2),
+.user-components__group img:nth-child(4) {
+  margin-left: -8px;
+}
+
+.chats-screen .user-components__column {
+  margin-bottom: 1rem;
+}
+
+.chats-screen .user-components__column img {
+  border-radius: 1rem;
+}
+
+.chats-screen .user-components__title {
+  font-size: 1rem;
+}
