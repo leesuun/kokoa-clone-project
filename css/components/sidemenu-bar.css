@@ -1,0 +1,62 @@
+#slide-menu {
+  display: none;
+}
+
+.menutoggle {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.screen-header label,
+.menutoggle {
+  cursor: pointer;
+}
+
+#slide-menu:checked + .test-slide {
+  left: 0px;
+}
+
+.test-slide {
+  position: fixed;
+  z-index: 200;
+  height: 100%;
+  width: 100%;
+  left: -100%;
+  transition: 1s;
+  background-color: #ffff67;
+  box-sizing: border-box;
+}
+
+.test-slide i {
+  position: absolute;
+  right: 0;
+}
+
+.kokoa-menu {
+  display: flex;
+  height: 100vh;
+  font-size: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.kokoa-menu li {
+  width: 100px;
+  margin-bottom: 1.5rem;
+}
+
+@keyframes shakebar {
+  from {
+    transform: none;
+  }
+
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+.screen-header label i {
+  animation: shakebar 1s ease-in-out infinite;
+}

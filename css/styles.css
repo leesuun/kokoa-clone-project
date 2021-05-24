@@ -5,6 +5,7 @@
 @import "reset.css";
 @import "status-bar.css";
 @import "variable.css";
+@import "animations.css";
 
 /* screens css */
 @import "screens/login.css";
@@ -23,6 +24,7 @@
 @import "components/badge.css";
 @import "components/alt-header.css";
 @import "components/no-mobile.css";
+@import "components/sidemenu-bar.css";
 
 .main-screen {
   padding: 0px var(--horizontal-space);

@@ -1,6 +1,6 @@
 #no-mobile {
   position: absolute;
-  z-index: 106;
+  z-index: 1000;
   height: 150vh;
   width: 100vw;
   background-color: var(--yellow);

@@ -37,28 +37,3 @@
   background-color: tomato;
   border-radius: 50%;
 }
-
-/* .settings__list {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  margin-top: 30px;
-}
-
-.settings__list span {
-  margin-left: 19px;
-  font-size: 20px;
-}
-
-.settings__list i {
-  opacity: 0.8;
-}
-
-.settings__list:nth-child(2) span:nth-child(2) {
-  margin-left: 25px;
-}
-
-.settings__list__column {
-  display: flex;
-  justify-content: space-between;
-} */ ;

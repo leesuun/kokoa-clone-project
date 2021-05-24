@@ -1,5 +1,4 @@
 #chat-screen {
-  /* background-color: #dde655; */
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,32 +18,6 @@
 
 #chat-screen .status-bar {
   z-index: 2;
-}
-
-@keyframes rightslide {
-  0%,
-  50%,
-  80% {
-    transform: translateX(-100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes leftslide {
-  0%,
-  50%,
-  80% {
-    transform: translateX(100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
 }
 
 .main-chat {

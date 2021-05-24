@@ -83,16 +83,6 @@
   content: "";
 }
 
-@keyframes hideSplashScreen {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
 #splash-screen {
   position: absolute;
   background-color: var(--blue);
@@ -113,15 +103,6 @@
   margin-bottom: 25rem;
 }
 
-@keyframes spinstar {
-  from {
-  }
-
-  to {
-    transform: rotate(1turn);
-  }
-}
-
 #splash-screen img {
   display: flex;
   flex-direction: column;
@@ -135,18 +116,6 @@
   margin-top: 7rem;
   margin-left: 1rem;
   align-items: center;
-}
-
-@keyframes loading {
-  0%,
-  50%,
-  100% {
-    transform: translateY(0px);
-  }
-
-  20% {
-    transform: translateY(-50px);
-  }
 }
 
 .loading div {

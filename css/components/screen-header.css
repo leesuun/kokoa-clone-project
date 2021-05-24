@@ -28,16 +28,6 @@
   font-weight: 600;
 }
 
-@keyframes facogspin {
-  from {
-    transform: none;
-  }
-
-  to {
-    transform: rotateZ(360deg);
-  }
-}
-
 .fa-cog:hover {
   animation: facogspin 1s linear infinite;
 }

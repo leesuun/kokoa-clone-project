@@ -16,16 +16,6 @@
   text-align: center;
 }
 
-@keyframes DropText {
-  from {
-    transform: translateY(-15rem);
-  }
-
-  to {
-    transform: translateY(0px);
-  }
-}
-
 .welcome-header__title {
   font-size: 25px;
   color: var(--blue);
@@ -37,31 +27,11 @@
   animation: DropText 0.5s ease-in-out;
 }
 
-@keyframes SlideText {
-  from {
-    transform: translateX(25rem);
-  }
-
-  to {
-    transform: translateX(0px);
-  }
-}
-
 .welcome-header__text {
   width: 60%;
   line-height: 170%;
   opacity: 0.7;
   animation: SlideText 2s ease-in-out;
-}
-
-@keyframes Appear {
-  from {
-    transform: scale(0);
-  }
-
-  to {
-    transform: scale(1);
-  }
 }
 
 .login-box {

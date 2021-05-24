@@ -27,32 +27,11 @@
   font-weight: 700;
 }
 
-@keyframes secondcheck {
-  0%,
-  50%,
-  100% {
-    opacity: 1;
-  }
-
-  20% {
-    opacity: 0;
-  }
-}
-
 .status-bar__column:nth-child(2) div span:nth-child(2) {
   margin: 0 2px;
   animation: secondcheck 1s ease-in-out infinite;
   font-size: 1.2rem;
   margin-bottom: 2px;
-}
-
-@keyframes wifiaction {
-  from {
-    transform: none;
-  }
-  to {
-    transform: scale(1.2);
-  }
 }
 
 .status-bar .fa-wifi {

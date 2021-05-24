@@ -129,21 +129,6 @@
   border-bottom: var(--border-bottom);
 }
 
-@keyframes heartcount {
-  0% {
-    color: white;
-  }
-
-  50% {
-    color: tomato;
-    transform: scale(2);
-  }
-
-  100% {
-    color: white;
-  }
-}
-
 .open-post__heart i:hover {
   will-change: transform;
   animation: heartcount 1s linear infinite;

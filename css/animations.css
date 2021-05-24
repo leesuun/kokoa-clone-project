@@ -1,0 +1,171 @@
+/*--------------------------------- nav-bar__animations ----------------------------------*/
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+
+  50% {
+    transform: translateY(-5px) rotateY(360deg);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/*--------------------------------- screen-header__animations ----------------------------------*/
+
+@keyframes facogspin {
+  from {
+    transform: none;
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+/*--------------------------------- status-bar__animations ----------------------------------*/
+
+@keyframes secondcheck {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 0;
+  }
+}
+
+@keyframes wifiaction {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+/*--------------------------------- login-screen__animations ----------------------------------*/
+
+@keyframes DropText {
+  from {
+    transform: translateY(-15rem);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes SlideText {
+  from {
+    transform: translateX(25rem);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes Appear {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/*--------------------------------- friends-screen__animations ----------------------------------*/
+
+@keyframes hideSplashScreen {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes spinstar {
+  from {
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes loading {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  20% {
+    transform: translateY(-50px);
+  }
+}
+
+/*--------------------------------- chat-screen__animations ----------------------------------*/
+
+@keyframes rightslide {
+  0%,
+  50%,
+  80% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes leftslide {
+  0%,
+  50%,
+  80% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+/*--------------------------------- search-screen__animations ----------------------------------*/
+
+@keyframes heartcount {
+  0% {
+    color: white;
+  }
+
+  50% {
+    color: tomato;
+    transform: scale(2);
+  }
+
+  100% {
+    color: white;
+  }
+}
