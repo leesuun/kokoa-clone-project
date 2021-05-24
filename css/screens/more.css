@@ -74,65 +74,6 @@
   font-size: 1.5rem;
 }
 
-/* .icon-row {
-  display: flex;
-  margin-top: 30px;
-  justify-content: space-between;
-}
-
-.icon-row__two {
-  display: flex;
-  margin-top: 30px;
-  padding-bottom: 25px;
-  margin-left: 12px;
-}
-
-.icon-row__two .icon-row__icon:nth-child(2) {
-  margin-left: 95px;
-}
-
-.icon-row__icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.icon-row__icon i {
-  font-size: 25px;
-  margin-bottom: 15px;
-}
-
-.border-bottom {
-  width: 100%;
-  height: 1px;
-  background-color: rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
-}
-
-.suggestions-column {
-  display: flex;
-  margin-top: 20px;
-  justify-content: flex-start;
-}
-.suggestions-photo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 10px;
-}
-
-.suggestions-photo img {
-  height: 50px;
-  width: 50px;
-  border-radius: 10px;
-}
-
-.suggestions-photo span {
-  margin-top: 5px;
-  font-size: 13px;
-  opacity: 0.7;
-} */
-
 .fa-exclamation-circle {
   color: tomato;
 }
