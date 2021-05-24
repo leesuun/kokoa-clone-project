@@ -144,4 +144,5 @@ a {
 
 body {
   height: 150vh;
+  overflow-x: hidden;
 }
