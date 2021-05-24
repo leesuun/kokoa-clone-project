@@ -8,6 +8,7 @@
   width: 100%;
   top: 0px;
   background-color: var(--blue);
+  background-image: linear-gradient(50deg, #00ccff, purple);
   z-index: 5;
 }
 
@@ -19,10 +20,43 @@
   margin-left: 2px;
 }
 
-.status-bar__column:nth-child(2) {
+.status-bar__column:nth-child(2) div {
   display: flex;
+  align-items: center;
   justify-content: center;
   font-weight: 700;
+}
+
+@keyframes secondcheck {
+  0%,
+  50%,
+  100% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+}
+
+.status-bar__column:nth-child(2) div span:nth-child(2) {
+  margin: 0 2px;
+  animation: secondcheck 1s ease-in-out infinite;
+  font-size: 1.2rem;
+  margin-bottom: 2px;
+}
+
+@keyframes wifiaction {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.status-bar .fa-wifi {
+  animation: wifiaction 1s ease-in-out infinite;
 }
 
 .status-bar__column:nth-child(3) {

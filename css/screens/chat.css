@@ -1,18 +1,48 @@
 #chat-screen {
-  background-color: #abc1d1;
+  /* background-color: #dde655; */
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 5;
+}
+
+#chat-screen::after {
+  position: absolute;
+  top: 0;
+  background-image: url("img/friend-bg.PNG");
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: 0.6;
+  z-index: -5;
 }
 
 #chat-screen .status-bar {
   z-index: 2;
 }
 
-@keyframes fadein {
-  from {
-    transform: translateY(10px);
+@keyframes rightslide {
+  0%,
+  50%,
+  80% {
+    transform: translateX(-100px);
     opacity: 0;
   }
-  to {
-    transform: none;
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes leftslide {
+  0%,
+  50%,
+  80% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
     opacity: 1;
   }
 }
@@ -21,11 +51,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 130px;
-  animation: fadein 0.3s linear;
+  margin-top: 105px;
+}
+
+.chat-one {
+  animation: rightslide 1s ease-in-out;
+}
+
+.chat-two {
+  animation: leftslide 2s ease-in-out;
+}
+
+.chat-three {
+  animation: rightslide 3s ease-in-out;
+}
+
+.chat-four {
+  animation: leftslide 4s ease-in-out;
+}
+
+.chat-five {
+  animation: rightslide 5s ease-in-out;
 }
 
 .chat__timestamp {
+  margin-top: 1rem;
   padding: 7px 15px;
   border-radius: 15px;
   color: white;

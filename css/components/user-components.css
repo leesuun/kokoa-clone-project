@@ -49,6 +49,10 @@
   text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 
+.user-components__subtitle i {
+  opacity: 1;
+}
+
 .user-components__title--not-bold {
   font-weight: 400;
   font-size: 18px;

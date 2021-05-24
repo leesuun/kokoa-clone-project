@@ -19,7 +19,11 @@
 }
 
 .chats-screen .user-components__column {
-  margin-bottom: 1rem;
+  padding: 5px;
+}
+
+.chats-screen .user-components {
+  margin-bottom: 5px;
 }
 
 .chats-screen .user-components__column img {
@@ -28,4 +32,25 @@
 
 .chats-screen .user-components__title {
   font-size: 1rem;
+}
+
+.chats-screen .user-components:hover {
+  position: relative;
+  z-index: 1;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px black;
+  cursor: pointer;
+}
+
+.chats-screen .user-components:hover::after {
+  background-image: url("img/water.jpg");
+  opacity: 0.6;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  border-radius: 10px;
+  content: "";
 }

@@ -3,12 +3,14 @@
   justify-content: space-between;
   align-items: center;
   padding: var(--horizontal-space);
-  padding-top: 55px;
+  margin-top: 25px;
+  /* padding-top: 55px; */
+
   box-sizing: border-box;
   position: fixed;
   width: 100%;
   top: 0px;
-  background-color: #abc1d1;
+  background-color: #ffff20;
   z-index: 1;
 }
 

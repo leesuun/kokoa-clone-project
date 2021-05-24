@@ -105,7 +105,7 @@
 }
 
 #login-form input[type="submit"] {
-  background-color: var(--blue);
+  background-image: linear-gradient(50deg, #00ccff, purple);
   cursor: pointer;
   padding: 17px;
   margin-top: 15px;
