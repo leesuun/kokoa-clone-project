@@ -47,10 +47,6 @@
 .friends-display-link i:nth-child(3) {
   margin-left: 13px;
 }
-/* 
-.friends-screen {
-  margin: 0px var(--horizontal-space);
-} */
 
 .friedns-screen__channel-header {
   display: flex;
@@ -102,7 +98,7 @@
   background-color: var(--blue);
   top: 0px;
   width: 100vw;
-  height: 100vh;
+  height: 150vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -111,6 +107,10 @@
   animation: hideSplashScreen 0.4s ease-in-out forwards;
   animation-delay: 4s;
   z-index: 101;
+}
+
+#splash-screen .loading {
+  margin-bottom: 25rem;
 }
 
 @keyframes spinstar {

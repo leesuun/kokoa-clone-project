@@ -1,7 +1,7 @@
 #no-mobile {
   position: absolute;
-  z-index: 99;
-  height: 100vh;
+  z-index: 106;
+  height: 150vh;
   width: 100vw;
   background-color: var(--yellow);
   display: flex;
@@ -10,6 +10,10 @@
   justify-content: center;
   align-items: center;
   font-size: 32px;
+}
+
+#no-mobile p {
+  margin-bottom: 20rem;
 }
 
 @media screen and (max-width: 645px) {
