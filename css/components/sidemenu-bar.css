@@ -23,6 +23,7 @@
   height: 100%;
   width: 100%;
   left: -100%;
+  top: 0;
   transition: 1s;
   background-color: #ffff67;
   box-sizing: border-box;
